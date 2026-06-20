@@ -1,0 +1,698 @@
+﻿/* ===========================
+   Smart Gram Labour
+   style.css
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Noto Sans Bengali',sans-serif;
+}
+
+body{
+background:#f4f7fb;
+color:#222;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+button{
+cursor:pointer;
+border:none;
+outline:none;
+}
+
+/* ======================
+HEADER
+====================== */
+
+.topbar{
+
+position:sticky;
+top:0;
+
+background:#ffffff;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px;
+
+box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+z-index:999;
+
+}
+
+.logo{
+
+font-size:24px;
+
+font-weight:700;
+
+color:#0f8d4e;
+
+}
+
+.menu-btn{
+
+background:#0f8d4e;
+
+color:white;
+
+width:45px;
+
+height:45px;
+
+border-radius:12px;
+
+font-size:22px;
+
+}
+
+/* ======================
+HERO
+====================== */
+
+.hero{
+
+padding:40px 20px;
+
+text-align:center;
+
+background:linear-gradient(135deg,#0f8d4e,#16b969);
+
+color:white;
+
+border-bottom-left-radius:35px;
+
+border-bottom-right-radius:35px;
+
+}
+
+.hero h1{
+
+font-size:32px;
+
+margin-bottom:15px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+opacity:.9;
+
+margin-bottom:25px;
+
+}
+
+.requestBtn{
+
+background:white;
+
+color:#0f8d4e;
+
+padding:15px 30px;
+
+font-size:18px;
+
+border-radius:50px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.requestBtn:hover{
+
+transform:scale(1.05);
+
+}
+
+/* ======================
+SEARCH
+====================== */
+
+.searchArea{
+
+padding:20px;
+
+}
+
+.searchArea input{
+
+width:100%;
+
+padding:18px;
+
+border-radius:18px;
+
+border:none;
+
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+font-size:17px;
+
+}
+
+/* ======================
+TITLE
+====================== */
+
+.serviceTitle{
+
+padding:15px 20px;
+
+}
+
+.serviceTitle h2{
+
+font-size:28px;
+
+color:#222;
+
+}
+
+/* ======================
+SERVICE GRID
+====================== */
+
+.services{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+
+gap:20px;
+
+padding:20px;
+
+}
+/* ======================
+SERVICE CARD
+====================== */
+
+.card{
+
+background:#ffffff;
+
+border-radius:22px;
+
+padding:22px;
+
+text-align:center;
+
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+transition:.35s;
+
+cursor:pointer;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.icon{
+
+font-size:55px;
+
+margin-bottom:15px;
+
+}
+
+.card h3{
+
+font-size:22px;
+
+margin-bottom:10px;
+
+}
+
+.card p{
+
+font-size:15px;
+
+color:#666;
+
+margin-bottom:20px;
+
+}
+
+.card button{
+
+background:#0f8d4e;
+
+color:white;
+
+padding:12px 22px;
+
+border-radius:30px;
+
+font-size:16px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.card button:hover{
+
+background:#0b6d3b;
+
+}
+
+
+/* ======================
+FEATURE SECTION
+====================== */
+
+.featureSection{
+
+padding:50px 20px;
+
+}
+
+.featureSection h2{
+
+text-align:center;
+
+font-size:30px;
+
+margin-bottom:30px;
+
+}
+
+.featureBox{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+}
+
+.feature{
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+font-size:40px;
+
+}
+
+.feature h3{
+
+margin-top:15px;
+
+font-size:22px;
+
+}
+
+.feature p{
+
+margin-top:10px;
+
+font-size:15px;
+
+color:#666;
+
+}
+
+
+/* ======================
+JOIN SECTION
+====================== */
+
+.workerJoin{
+
+padding:60px 20px;
+
+text-align:center;
+
+background:#0f8d4e;
+
+color:white;
+
+margin-top:40px;
+
+}
+
+.workerJoin h2{
+
+font-size:32px;
+
+margin-bottom:15px;
+
+}
+
+.workerJoin p{
+
+font-size:18px;
+
+margin-bottom:25px;
+
+}
+
+.joinBtn{
+
+background:white;
+
+color:#0f8d4e;
+
+padding:15px 30px;
+
+border-radius:40px;
+
+font-size:18px;
+
+font-weight:bold;
+
+}
+/* ======================
+FOOTER
+====================== */
+
+footer{
+background:#111;
+color:white;
+padding:40px 20px;
+text-align:center;
+margin-top:50px;
+}
+
+.footerLogo{
+font-size:28px;
+font-weight:bold;
+margin-bottom:15px;
+color:#16c46d;
+}
+
+.footerLinks{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+margin-top:20px;
+}
+
+.footerLinks a{
+color:#ddd;
+font-size:16px;
+transition:.3s;
+}
+
+.footerLinks a:hover{
+color:#16c46d;
+}
+
+/* ======================
+BOTTOM NAVIGATION
+====================== */
+
+.bottomNav{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+height:70px;
+background:#ffffff;
+display:flex;
+justify-content:space-around;
+align-items:center;
+box-shadow:0 -5px 20px rgba(0,0,0,.08);
+z-index:999;
+}
+
+.navItem{
+display:flex;
+flex-direction:column;
+align-items:center;
+font-size:24px;
+color:#666;
+cursor:pointer;
+transition:.3s;
+}
+
+.navItem span{
+font-size:13px;
+margin-top:4px;
+}
+
+.navItem:hover{
+color:#0f8d4e;
+}
+
+/* ======================
+FLOATING BUTTON
+====================== */
+
+.floatingBtn{
+position:fixed;
+right:20px;
+bottom:90px;
+width:65px;
+height:65px;
+border-radius:50%;
+background:#16c46d;
+color:white;
+font-size:28px;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+transition:.3s;
+}
+
+.floatingBtn:hover{
+transform:scale(1.1);
+}
+
+/* ======================
+SCROLLBAR
+====================== */
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+background:#16c46d;
+border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+background:#f2f2f2;
+}
+
+/* ======================
+ANIMATION
+====================== */
+
+.card,
+.feature,
+.requestBtn,
+.joinBtn{
+animation:fadeUp .7s ease;
+}
+
+@keyframes fadeUp{
+
+0%{
+opacity:0;
+transform:translateY(25px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* ======================
+RESPONSIVE
+====================== */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:26px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.logo{
+font-size:20px;
+}
+
+.serviceTitle h2{
+font-size:24px;
+}
+
+.card{
+padding:18px;
+}
+
+.icon{
+font-size:45px;
+}
+
+.feature h3{
+font-size:20px;
+}
+
+.bottomNav{
+height:65px;
+}
+
+.navItem{
+font-size:20px;
+}
+
+}
+
+/* Bottom Nav ???? ?? ??????? ???? */
+body{
+padding-bottom:90px;
+}
+.service-page{
+
+max-width:700px;
+
+margin:40px auto;
+
+padding:25px;
+
+background:white;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+text-align:center;
+
+}
+
+.service-icon{
+
+font-size:90px;
+
+color:#0f8d4e;
+
+margin:20px;
+
+}
+
+.service-page h1{
+
+font-size:35px;
+
+margin:20px;
+
+}
+
+.service-page p{
+
+font-size:18px;
+
+line-height:30px;
+
+color:#555;
+
+}
+
+.service-page h2{
+
+margin:25px;
+
+color:#0f8d4e;
+
+}
+
+.back-btn{
+
+text-decoration:none;
+
+font-size:20px;
+
+font-weight:bold;
+
+color:#0f8d4e;
+
+display:inline-block;
+
+margin-bottom:20px;
+
+}
+
+.callBtn,
+.whatsappBtn,
+.requestBtn{
+
+display:block;
+
+width:100%;
+
+padding:18px;
+
+margin-top:15px;
+
+border:none;
+
+border-radius:15px;
+
+font-size:18px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+.callBtn{
+
+background:#0f8d4e;
+
+color:white;
+
+}
+
+.whatsappBtn{
+
+background:#25D366;
+
+color:white;
+
+}
+
+.requestBtn{
+
+background:#222;
+
+color:white;
+
+}
