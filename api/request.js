@@ -43,10 +43,7 @@ export default async function handler(req, res) {
 
     const text = await response.text();
 
-    return res.status(200).json({
-      appsheetStatus: response.status,
-      appsheetResponse: text
-    });
+return res.status(response.status).send(text);
 
   } catch (err) {
 
