@@ -13,32 +13,29 @@ export default async function handler(req, res) {
   const body = {
     Action: "Add",
     Properties: {},
-    Rows: [
-      req.body
-    ]
+    Rows: [req.body]
   };
 
   try {
 
     const response = await fetch(
-  `https://api.appsheet.com/api/v2/apps/${APP_ID}/tables/Jobs/Action`,
-  {
-    method: "POST",
-    headers: {
-      "ApplicationAccessKey": ACCESS_KEY,
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(body)
-  }
-);
-    const result = await response.text();
+      `https://api.appsheet.com/api/v2/apps/${APP_ID}/tables/Jobs/Action`,
+      {
+        method: "POST",
+        headers: {
+          "ApplicationAccessKey": ACCESS_KEY,
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(body)
+      }
+    );
 
-console.log("AppSheet Response:", result);
+    const text = await response.text();
 
-return res.status(200).json({
-  status: response.status,
-  body: result
-});
+    return res.status(200).json({
+      appsheetStatus: response.status,
+      appsheetResponse: text
+    });
 
   } catch (err) {
 
@@ -46,5 +43,6 @@ return res.status(200).json({
       success: false,
       error: err.message
     });
-    }
+
+  }
 }
