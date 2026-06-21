@@ -31,3 +31,16 @@ export default async function handler(req, res) {
     body: JSON.stringify(body)
   }
 );
+    const result = await response.text();
+
+    return res.status(response.status).send(result);
+
+  } catch (err) {
+
+    return res.status(500).json({
+      success: false,
+      error: err.message
+    });
+
+  }
+}
