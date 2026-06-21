@@ -191,7 +191,7 @@ if (searchBox) {
 
     const keyword = this.value.toLowerCase();
 
-    document.querySelectorAll(".Card").forEach(function(card){
+    document.querySelectorAll(".card").forEach(function(card){
 
       const text = card.innerText.toLowerCase();
 
