@@ -21,28 +21,13 @@ export default async function handler(req, res) {
   try {
 
     const response = await fetch(
-      `https://api.appsheet.com/api/v2/apps/${59875cb5-157f-4642-a66d-2ccc9c4952a0}/tables/Jobs/Action`,
-      {
-        method: "POST",
-        headers: {
-          "ApplicationAccessKey": V2-u6zGD-M58mn-Age8M-IYgBS-5bL7B-L1kpV-q6e3k-r2wat,
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(body)
-      }
-    );
-
-    const result = await response.text();
-
-    return res.status(response.status).send(result);
-
-  } catch (err) {
-
-    return res.status(500).json({
-      success: false,
-      error: err.message
-    });
-
+  `https://api.appsheet.com/api/v2/apps/${APP_ID}/tables/Jobs/Action`,
+  {
+    method: "POST",
+    headers: {
+      "ApplicationAccessKey": ACCESS_KEY,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(body)
   }
-
-}
+);
