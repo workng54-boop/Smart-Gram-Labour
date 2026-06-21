@@ -163,13 +163,9 @@ try {
     body: JSON.stringify(data)
   });
 
-  const text = await response.text();
+  const result = await response.json();
 
-if (response.ok) {
-    alert("অনুরোধ সফলভাবে পাঠানো হয়েছে");
-} else {
-    alert(text);
-}
+alert(JSON.stringify(result, null, 2));
 
 } catch (err) {
   alert(err.message);
