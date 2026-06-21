@@ -183,3 +183,26 @@ try {
 function openRequest() {
     window.location.href = "request.html?service=" + id;
 }
+const searchBox = document.getElementById("searchBox");
+
+if (searchBox) {
+
+  searchBox.addEventListener("input", function () {
+
+    const keyword = this.value.toLowerCase();
+
+    document.querySelectorAll(".serviceCard").forEach(function(card){
+
+      const text = card.innerText.toLowerCase();
+
+      if(text.includes(keyword)){
+        card.style.display = "block";
+      }else{
+        card.style.display = "none";
+      }
+
+    });
+
+  });
+
+}
