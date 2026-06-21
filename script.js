@@ -165,6 +165,7 @@ try {
 
   if (response.ok) {
     alert("✅ আপনার অনুরোধ সফলভাবে জমা হয়েছে।");
+    window.location.href="index.html"
 } else {
     const result = await response.text();
     console.log(result);
