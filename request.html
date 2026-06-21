@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="bn">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Request Service</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="request-container">
+
+<h1>📝 সার্ভিস রিকোয়েস্ট</h1>
+
+<input type="text" placeholder="👤 আপনার নাম">
+
+<input
+id="mobile"
+type="tel"
+placeholder="📱 মোবাইল নম্বর"
+pattern="[6-9][0-9]{9}"
+maxlength="10"
+required>
+
+<select>
+
+<option>সার্ভিস নির্বাচন করুন</option>
+
+<option>রাজমিস্ত্রি</option>
+
+<option>গাড়ি মিস্ত্রি</option>
+
+<option>ইলেকট্রিশিয়ান</option>
+
+<option>প্লাম্বার</option>
+
+<option>কাঠমিস্ত্রি</option>
+
+<option>রংমিস্ত্রি</option>
+
+<option>বাঁশের কাজ</option>
+
+<option>পরিষ্কার-পরিচ্ছন্নতা</option>
+
+</select>
+
+<input type="text" placeholder="📍 গ্রাম">
+<p style="color:green;font-weight:bold;">
+✅ বর্তমানে শুধুমাত্র Pin Code 721503 এলাকায় পরিষেবা চালু রয়েছে।
+</p>
+<input type="text" value="721503" readonly>
+
+<textarea placeholder="কাজের বিস্তারিত লিখুন"></textarea>
+
+<button class="submitBtn" onclick="submitRequest()">
+    Submit Request
+</button>
+
+</div>
+
+</body>
+
+</html>
