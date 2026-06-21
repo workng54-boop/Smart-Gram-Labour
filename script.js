@@ -113,7 +113,11 @@ works: [
 };
 
 const id = new URLSearchParams(window.location.search).get("service");
+const serviceSelect = document.getElementById("service");
 
+if (serviceSelect) {
+    serviceSelect.value = id;
+}
 if (services[id]) {
 
   document.getElementById("serviceName").innerText = services[id].name;
