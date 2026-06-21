@@ -10,7 +10,7 @@ export default async function handler(req, res) {
   const APP_ID = "59875cb5-157f-4642-a66d-2ccc9c4952a0";
   const ACCESS_KEY = "V2-u6zGD-M58mn-Age8M-IYgBS-5bL7B-L1kpV-q6e3k-r2wat";
 
-  cconst body = {
+  const body = {
   Action: "Add",
   Rows: [
     {
