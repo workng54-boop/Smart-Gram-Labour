@@ -163,9 +163,13 @@ try {
     body: JSON.stringify(data)
   });
 
-  const result = await response.json();
-
-alert(JSON.stringify(result, null, 2));
+  if (response.ok) {
+    alert("✅ আপনার অনুরোধ সফলভাবে জমা হয়েছে।");
+} else {
+    const result = await response.text();
+    console.log(result);
+    alert("❌ অনুরোধ জমা দেওয়া যায়নি।");
+}
 
 } catch (err) {
   alert(err.message);
