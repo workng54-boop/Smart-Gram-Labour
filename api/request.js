@@ -21,7 +21,7 @@ export default async function handler(req, res) {
       Description: "",
       Address: "",
       Rate: "",
-      Status: "Pending",
+      Status: "New",
       Mobile: req.body.Mobile
     }
   ]
