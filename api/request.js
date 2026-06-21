@@ -33,7 +33,12 @@ export default async function handler(req, res) {
 );
     const result = await response.text();
 
-    return res.status(response.status).send(result);
+console.log("AppSheet Response:", result);
+
+return res.status(200).json({
+  status: response.status,
+  body: result
+});
 
   } catch (err) {
 
