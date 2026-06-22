@@ -1107,22 +1107,6 @@ color:#fff;
     top:0;
     z-index:100;
 }
-
-.searchBar{
-    padding:15px;
-    background:#fff;
-}
-
-.searchBar input{
-    width:100%;
-    padding:12px 15px;
-    border:1px solid #ddd;
-    border-radius:12px;
-    font-size:16px;
-    outline:none;
-    box-sizing:border-box;
-}
-
 .serviceGrid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
